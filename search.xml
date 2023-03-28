@@ -20,7 +20,7 @@
       
         <tags>
             
-            <tag> operating system </tag>
+            <tag> Network </tag>
             
         </tags>
       
@@ -29,7 +29,7 @@
     
     
     <entry>
-      <title>FPGA Game Machine Project</title>
+      <title>创建虚拟环境</title>
       <link href="/liangjunyi.github.io/2023/02/01/python-create-virtual-env/"/>
       <url>/liangjunyi.github.io/2023/02/01/python-create-virtual-env/</url>
       
