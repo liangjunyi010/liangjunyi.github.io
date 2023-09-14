@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>GO learning - 005 Pointer</title>
+      <link href="/liangjunyi.github.io/2023/09/14/go-learning-006-import-anonymous-and-rename/"/>
+      <url>/liangjunyi.github.io/2023/09/14/go-learning-006-import-anonymous-and-rename/</url>
+      
+        <content type="html"><![CDATA[<h1 id="GO-learning-006-Pointer"><a href="#GO-learning-006-Pointer" class="headerlink" title="GO learning - 006 Pointer"></a>GO learning - 006 Pointer</h1><p><img src="https://s2.loli.net/2023/09/14/DRGCNZ6JjrS12Ty.png" alt="image-20230914143914977"></p><p><img src="https://s2.loli.net/2023/09/14/3jFlksOIueah4y9.png" alt="image-20230914144207753"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> GO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> go </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>GO learning - 005 Import anonymous and rename</title>
       <link href="/liangjunyi.github.io/2023/09/13/go-learning-005-import-anonymous-and-rename/"/>
       <url>/liangjunyi.github.io/2023/09/13/go-learning-005-import-anonymous-and-rename/</url>
@@ -724,9 +749,9 @@
       
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> Python </tag>
+            
+            <tag> JavaScript </tag>
             
             <tag> Django </tag>
             
