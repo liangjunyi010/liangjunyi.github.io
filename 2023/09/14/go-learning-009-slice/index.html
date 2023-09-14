@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java-7-异常 01 - 03, Home - Junyi Liang">
-    <meta name="description" content="什么是多态,instanceof和类型转换,static关键字详解,抽象类,接口的定义与实现,N种内部类">
+    <meta name="keywords" content="GO learning - 007 defer, Home - Junyi Liang">
+    <meta name="description" content="defer">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +19,7 @@
 
     
 
-    <title>Java-7-异常 01 - 03 | Home - Junyi Liang</title>
+    <title>GO learning - 007 defer | Home - Junyi Liang</title>
     <link rel="icon" type="image/png" href="/liangjunyi.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/liangjunyi.github.io/libs/awesome/css/all.min.css">
@@ -265,12 +265,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.loli.net/2022/10/28/I21HGm8pPN9k3Zu.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.loli.net/2023/09/14/fsmtjwc3a21uGN5.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java-7-异常 01 - 03</h1>
+                    <h1 class="description center-align post-title">GO learning - 007 defer</h1>
                 </div>
             </div>
         </div>
@@ -386,8 +386,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/liangjunyi.github.io/tags/Java/">
-                                <span class="chip bg-color">Java</span>
+                            <a href="/liangjunyi.github.io/tags/go/">
+                                <span class="chip bg-color">go</span>
                             </a>
                         
                     </div>
@@ -398,8 +398,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/liangjunyi.github.io/categories/Java/" class="post-category">
-                                Java
+                            <a href="/liangjunyi.github.io/categories/GO/" class="post-category">
+                                GO
                             </a>
                         
                     </div>
@@ -411,21 +411,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-11-06
+                    2023-09-14
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2023-03-28
+                    2023-09-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    389
+                    263
                 </div>
                 
 
@@ -455,98 +455,104 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Java异常-01-03"><a href="#Java异常-01-03" class="headerlink" title="Java异常 01 - 03"></a>Java异常 01 - 03</h1><h2 id="Java异常01-Error和Exception"><a href="#Java异常01-Error和Exception" class="headerlink" title="Java异常01 - Error和Exception"></a>Java异常01 - Error和Exception</h2><p><img src="https://s2.loli.net/2022/11/10/pwq2lzikdyHVhDs.png" alt="image-20221110155118391"></p>
-<p><img src="https://s2.loli.net/2022/11/10/MhtqKflSX9sQrCE.png" alt="image-20221110155144022"></p>
-<p><img src="https://s2.loli.net/2022/11/10/mZqVQfei9gvnsDR.png" alt="image-20221110155225513"></p>
-<h2 id="Java异常02-捕获和抛出异常"><a href="#Java异常02-捕获和抛出异常" class="headerlink" title="Java异常02 - 捕获和抛出异常"></a>Java异常02 - 捕获和抛出异常</h2><ul>
-<li>抛出异常</li>
-<li>捕获异常</li>
-<li>关键字<ul>
-<li>try</li>
-<li>catch</li>
-<li>finally</li>
-<li>throw</li>
-<li>throws</li>
-</ul>
-</li>
-</ul>
-<p><code>ctrl + alt + t</code></p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Test</span> <span class="token punctuation">&#123;</span>
+                <h1 id="GO-learning-008-array"><a href="#GO-learning-008-array" class="headerlink" title="GO learning - 008 array"></a>GO learning - 008 array</h1><p>test1</p>
+<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> main
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">"fmt"</span>
 
-        <span class="token keyword">try</span><span class="token punctuation">&#123;</span> <span class="token comment">//监控区域</span>
-            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token operator">/</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">&#125;</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">ArithmeticException</span> e<span class="token punctuation">)</span><span class="token punctuation">&#123;</span> <span class="token comment">// catch(想要捕获的异常类型)捕获异常，可以写多个catch，大的异常写下面</span>
-            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"程序出现异常，变量b不能为0"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">&#125;</span><span class="token keyword">finally</span> <span class="token punctuation">&#123;</span>
-            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"finally"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">&#125;</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">func</span> <span class="token function">printArray</span><span class="token punctuation">(</span>myArray <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">for</span> index<span class="token punctuation">,</span> value <span class="token operator">:=</span> <span class="token keyword">range</span> myArray <span class="token punctuation">&#123;</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"index = "</span><span class="token punctuation">,</span> index<span class="token punctuation">,</span> <span class="token string">" value = "</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
 
-<ul>
-<li>主动抛出异常 throw</li>
-</ul>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Test</span> <span class="token punctuation">&#123;</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">var</span> myArray1 <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token builtin">int</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	myArray2 <span class="token operator">:=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">&#125;</span>
+	myArray3 <span class="token operator">:=</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">&#123;</span><span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">44</span><span class="token punctuation">&#125;</span>
 
-    <span class="token punctuation">&#125;</span>
+	<span class="token keyword">for</span> i <span class="token operator">:=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>myArray1<span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">&#123;</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>myArray1<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#125;</span>
 
-    <span class="token comment">//假设这个方法中，处理不了这个异常，方法上抛出异常</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>b<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">ArithmeticException</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//主动抛出异常，一般在方法中使用</span>
-        <span class="token punctuation">&#125;</span>
-    <span class="token punctuation">&#125;</span>
+	<span class="token keyword">for</span> index<span class="token punctuation">,</span> value <span class="token operator">:=</span> <span class="token keyword">range</span> myArray2 <span class="token punctuation">&#123;</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"index = "</span><span class="token punctuation">,</span> index<span class="token punctuation">,</span> <span class="token string">" value = "</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span>
+	<span class="token punctuation">&#125;</span>
 
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"myArray1 types = %T\n"</span><span class="token punctuation">,</span> myArray1<span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"myArray2 types = %T\n"</span><span class="token punctuation">,</span> myArray2<span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"myArray3 types = %T\n"</span><span class="token punctuation">,</span> myArray3<span class="token punctuation">)</span>
 
-<p>throws和try catch是处理异常时用的两种方式，try catch就是直接捕获了异常，然后解决掉，throws就是把异常返回给了外面（多是调用这个函数的地方），在外面catch try。如果不采取以上两种措施中的一个，就有可能报错。</p>
-<h2 id="Java异常03-自定义异常及经验小结"><a href="#Java异常03-自定义异常及经验小结" class="headerlink" title="Java异常03 - 自定义异常及经验小结"></a>Java异常03 - 自定义异常及经验小结</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token class-name">Demo01</span><span class="token punctuation">;</span>
+	<span class="token function">printArray</span><span class="token punctuation">(</span>myArray3<span class="token punctuation">)</span> <span class="token comment">//传1或2会报错</span>
 
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyException</span> <span class="token keyword">extends</span> <span class="token class-name">Exception</span><span class="token punctuation">&#123;</span>
-    <span class="token keyword">private</span> <span class="token keyword">int</span> detail<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-    <span class="token keyword">public</span> <span class="token class-name">MyException</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>detail <span class="token operator">=</span> a<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
+<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token number">0</span>
+<span class="token number">0</span>
+<span class="token number">0</span>
+<span class="token number">0</span>
+<span class="token number">0</span>
+<span class="token number">0</span>
+<span class="token number">0</span>
+<span class="token number">0</span>
+<span class="token number">0</span>
+<span class="token number">0</span>
+index <span class="token operator">=</span>  <span class="token number">0</span>  value <span class="token operator">=</span>  <span class="token number">1</span>
+index <span class="token operator">=</span>  <span class="token number">1</span>  value <span class="token operator">=</span>  <span class="token number">2</span>
+index <span class="token operator">=</span>  <span class="token number">2</span>  value <span class="token operator">=</span>  <span class="token number">3</span>
+index <span class="token operator">=</span>  <span class="token number">3</span>  value <span class="token operator">=</span>  <span class="token number">4</span>
+index <span class="token operator">=</span>  <span class="token number">4</span>  value <span class="token operator">=</span>  <span class="token number">0</span>
+index <span class="token operator">=</span>  <span class="token number">5</span>  value <span class="token operator">=</span>  <span class="token number">0</span>
+index <span class="token operator">=</span>  <span class="token number">6</span>  value <span class="token operator">=</span>  <span class="token number">0</span>
+index <span class="token operator">=</span>  <span class="token number">7</span>  value <span class="token operator">=</span>  <span class="token number">0</span>
+index <span class="token operator">=</span>  <span class="token number">8</span>  value <span class="token operator">=</span>  <span class="token number">0</span>
+index <span class="token operator">=</span>  <span class="token number">9</span>  value <span class="token operator">=</span>  <span class="token number">0</span>
+myArray1 types <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token builtin">int</span>
+myArray2 types <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token builtin">int</span>
+myArray3 types <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token builtin">int</span>
+index <span class="token operator">=</span>  <span class="token number">0</span>  value <span class="token operator">=</span>  <span class="token number">11</span>
+index <span class="token operator">=</span>  <span class="token number">1</span>  value <span class="token operator">=</span>  <span class="token number">22</span>
+index <span class="token operator">=</span>  <span class="token number">2</span>  value <span class="token operator">=</span>  <span class="token number">33</span>
+index <span class="token operator">=</span>  <span class="token number">3</span>  value <span class="token operator">=</span>  <span class="token number">44</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">return</span> <span class="token string">"MyException&#123;"</span> <span class="token operator">+</span>
-                <span class="token string">"detail="</span> <span class="token operator">+</span> detail <span class="token operator">+</span>
-                <span class="token char">'&#125;'</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>test2</p>
+<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> main
 
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token class-name">Demo01</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">"fmt"</span>
 
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Test</span> <span class="token punctuation">&#123;</span>
+<span class="token keyword">func</span> <span class="token function">printArray</span><span class="token punctuation">(</span>myArray <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> value <span class="token operator">:=</span> <span class="token keyword">range</span> myArray <span class="token punctuation">&#123;</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"value = "</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span>
+	<span class="token punctuation">&#125;</span>
 
-    <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">MyException</span> <span class="token punctuation">&#123;</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"传递参数为："</span><span class="token operator">+</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	myArray<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">100</span>
+<span class="token punctuation">&#125;</span>
 
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token operator">></span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">MyException</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//抛出</span>
-        <span class="token punctuation">&#125;</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
 
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"OK"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
+	myArray <span class="token operator">:=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">&#125;</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
-            <span class="token function">test</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">MyException</span> e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"MyException=>"</span><span class="token operator">+</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">RuntimeException</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">&#125;</span>
-    <span class="token punctuation">&#125;</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"myArray type is %T\n"</span><span class="token punctuation">,</span> myArray<span class="token punctuation">)</span>
 
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+	<span class="token function">printArray</span><span class="token punctuation">(</span>myArray<span class="token punctuation">)</span>
+
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"==="</span><span class="token punctuation">)</span>
+	<span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> value <span class="token operator">:=</span> <span class="token keyword">range</span> myArray <span class="token punctuation">&#123;</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-go" data-language="go"><code class="language-go">myArray <span class="token keyword">type</span> is <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span>
+value <span class="token operator">=</span>  <span class="token number">1</span>
+value <span class="token operator">=</span>  <span class="token number">2</span>
+value <span class="token operator">=</span>  <span class="token number">3</span>
+value <span class="token operator">=</span>  <span class="token number">4</span>
+<span class="token operator">==</span><span class="token operator">=</span>
+<span class="token number">100</span>
+<span class="token number">2</span>
+<span class="token number">3</span>
+<span class="token number">4</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -574,7 +580,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://LiangJunyi-010.github.io/liangjunyi.github.io/2022/11/06/java-ji-chu-7-yi-chang-01-03/">https://LiangJunyi-010.github.io/liangjunyi.github.io/2022/11/06/java-ji-chu-7-yi-chang-01-03/</a>
+                    <a href="https://LiangJunyi-010.github.io/liangjunyi.github.io/2023/09/14/go-learning-009-slice/">https://LiangJunyi-010.github.io/liangjunyi.github.io/2023/09/14/go-learning-009-slice/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -612,8 +618,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/liangjunyi.github.io/tags/Java/">
-                                    <span class="chip bg-color">Java</span>
+                                <a href="/liangjunyi.github.io/tags/go/">
+                                    <span class="chip bg-color">go</span>
                                 </a>
                             
                         </div>
@@ -665,30 +671,30 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/liangjunyi.github.io/2022/11/10/c-ji-chu-1-jian-dan-cheng-xu/">
+                <a href="/liangjunyi.github.io/2023/09/14/go-learning-008-array/">
                     <div class="card-image">
                         
-                        <img src="https://s2.loli.net/2022/11/10/Qi3512XHgp7JUu4.png" class="responsive-img" alt="c#-基础-1- 简单程序">
+                        <img src="https://s2.loli.net/2023/09/14/fsmtjwc3a21uGN5.png" class="responsive-img" alt="GO learning - 007 defer">
                         
-                        <span class="card-title">c#-基础-1- 简单程序</span>
+                        <span class="card-title">GO learning - 007 defer</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            创建一个简单WPF应用
+                            defer
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-10
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-09-14
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/liangjunyi.github.io/categories/C/" class="post-category">
-                                    C#
+                            <a href="/liangjunyi.github.io/categories/GO/" class="post-category">
+                                    GO
                                 </a>
                             
                             
@@ -698,8 +704,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/liangjunyi.github.io/tags/C/">
-                        <span class="chip bg-color">C#</span>
+                    <a href="/liangjunyi.github.io/tags/go/">
+                        <span class="chip bg-color">go</span>
                     </a>
                     
                 </div>
@@ -713,30 +719,30 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/liangjunyi.github.io/2022/11/01/java-ji-chu-6-mian-xiang-dui-xiang-12-17/">
+                <a href="/liangjunyi.github.io/2023/09/13/go-learning-005-import-anonymous-and-rename/">
                     <div class="card-image">
                         
-                        <img src="https://s2.loli.net/2022/10/28/I21HGm8pPN9k3Zu.png" class="responsive-img" alt="Java面向对象 12 - 17">
+                        <img src="https://s2.loli.net/2023/09/14/fsmtjwc3a21uGN5.png" class="responsive-img" alt="GO learning - 005 Import anonymous and rename">
                         
-                        <span class="card-title">Java面向对象 12 - 17</span>
+                        <span class="card-title">GO learning - 005 Import anonymous and rename</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            什么是多态,instanceof和类型转换,static关键字详解,抽象类,接口的定义与实现,N种内部类
+                            Import anonymous and rename
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-13
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/liangjunyi.github.io/categories/Java/" class="post-category">
-                                    Java
+                            <a href="/liangjunyi.github.io/categories/GO/" class="post-category">
+                                    GO
                                 </a>
                             
                             
@@ -746,8 +752,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/liangjunyi.github.io/tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/liangjunyi.github.io/tags/go/">
+                        <span class="chip bg-color">go</span>
                     </a>
                     
                 </div>
