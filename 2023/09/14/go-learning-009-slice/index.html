@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="GO learning - 007 defer, Home - Junyi Liang">
-    <meta name="description" content="defer">
+    <meta name="keywords" content="GO learning - 009 slice, Home - Junyi Liang">
+    <meta name="description" content="slice">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +19,7 @@
 
     
 
-    <title>GO learning - 007 defer | Home - Junyi Liang</title>
+    <title>GO learning - 009 slice | Home - Junyi Liang</title>
     <link rel="icon" type="image/png" href="/liangjunyi.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/liangjunyi.github.io/libs/awesome/css/all.min.css">
@@ -270,7 +270,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">GO learning - 007 defer</h1>
+                    <h1 class="description center-align post-title">GO learning - 009 slice</h1>
                 </div>
             </div>
         </div>
@@ -425,7 +425,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    263
+                    4
                 </div>
                 
 
@@ -455,106 +455,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="GO-learning-008-array"><a href="#GO-learning-008-array" class="headerlink" title="GO learning - 008 array"></a>GO learning - 008 array</h1><p>test1</p>
-<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> main
-
-<span class="token keyword">import</span> <span class="token string">"fmt"</span>
-
-<span class="token keyword">func</span> <span class="token function">printArray</span><span class="token punctuation">(</span>myArray <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-	<span class="token keyword">for</span> index<span class="token punctuation">,</span> value <span class="token operator">:=</span> <span class="token keyword">range</span> myArray <span class="token punctuation">&#123;</span>
-		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"index = "</span><span class="token punctuation">,</span> index<span class="token punctuation">,</span> <span class="token string">" value = "</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span>
-	<span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-	<span class="token keyword">var</span> myArray1 <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token builtin">int</span>
-
-	myArray2 <span class="token operator">:=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">&#125;</span>
-	myArray3 <span class="token operator">:=</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">&#123;</span><span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">44</span><span class="token punctuation">&#125;</span>
-
-	<span class="token keyword">for</span> i <span class="token operator">:=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>myArray1<span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">&#123;</span>
-		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>myArray1<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-	<span class="token punctuation">&#125;</span>
-
-	<span class="token keyword">for</span> index<span class="token punctuation">,</span> value <span class="token operator">:=</span> <span class="token keyword">range</span> myArray2 <span class="token punctuation">&#123;</span>
-		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"index = "</span><span class="token punctuation">,</span> index<span class="token punctuation">,</span> <span class="token string">" value = "</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span>
-	<span class="token punctuation">&#125;</span>
-
-	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"myArray1 types = %T\n"</span><span class="token punctuation">,</span> myArray1<span class="token punctuation">)</span>
-	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"myArray2 types = %T\n"</span><span class="token punctuation">,</span> myArray2<span class="token punctuation">)</span>
-	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"myArray3 types = %T\n"</span><span class="token punctuation">,</span> myArray3<span class="token punctuation">)</span>
-
-	<span class="token function">printArray</span><span class="token punctuation">(</span>myArray3<span class="token punctuation">)</span> <span class="token comment">//传1或2会报错</span>
-
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token number">0</span>
-<span class="token number">0</span>
-<span class="token number">0</span>
-<span class="token number">0</span>
-<span class="token number">0</span>
-<span class="token number">0</span>
-<span class="token number">0</span>
-<span class="token number">0</span>
-<span class="token number">0</span>
-<span class="token number">0</span>
-index <span class="token operator">=</span>  <span class="token number">0</span>  value <span class="token operator">=</span>  <span class="token number">1</span>
-index <span class="token operator">=</span>  <span class="token number">1</span>  value <span class="token operator">=</span>  <span class="token number">2</span>
-index <span class="token operator">=</span>  <span class="token number">2</span>  value <span class="token operator">=</span>  <span class="token number">3</span>
-index <span class="token operator">=</span>  <span class="token number">3</span>  value <span class="token operator">=</span>  <span class="token number">4</span>
-index <span class="token operator">=</span>  <span class="token number">4</span>  value <span class="token operator">=</span>  <span class="token number">0</span>
-index <span class="token operator">=</span>  <span class="token number">5</span>  value <span class="token operator">=</span>  <span class="token number">0</span>
-index <span class="token operator">=</span>  <span class="token number">6</span>  value <span class="token operator">=</span>  <span class="token number">0</span>
-index <span class="token operator">=</span>  <span class="token number">7</span>  value <span class="token operator">=</span>  <span class="token number">0</span>
-index <span class="token operator">=</span>  <span class="token number">8</span>  value <span class="token operator">=</span>  <span class="token number">0</span>
-index <span class="token operator">=</span>  <span class="token number">9</span>  value <span class="token operator">=</span>  <span class="token number">0</span>
-myArray1 types <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token builtin">int</span>
-myArray2 types <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token builtin">int</span>
-myArray3 types <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token builtin">int</span>
-index <span class="token operator">=</span>  <span class="token number">0</span>  value <span class="token operator">=</span>  <span class="token number">11</span>
-index <span class="token operator">=</span>  <span class="token number">1</span>  value <span class="token operator">=</span>  <span class="token number">22</span>
-index <span class="token operator">=</span>  <span class="token number">2</span>  value <span class="token operator">=</span>  <span class="token number">33</span>
-index <span class="token operator">=</span>  <span class="token number">3</span>  value <span class="token operator">=</span>  <span class="token number">44</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>test2</p>
-<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> main
-
-<span class="token keyword">import</span> <span class="token string">"fmt"</span>
-
-<span class="token keyword">func</span> <span class="token function">printArray</span><span class="token punctuation">(</span>myArray <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-	<span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> value <span class="token operator">:=</span> <span class="token keyword">range</span> myArray <span class="token punctuation">&#123;</span>
-		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"value = "</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span>
-	<span class="token punctuation">&#125;</span>
-
-	myArray<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">100</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-
-	myArray <span class="token operator">:=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">&#125;</span>
-
-	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"myArray type is %T\n"</span><span class="token punctuation">,</span> myArray<span class="token punctuation">)</span>
-
-	<span class="token function">printArray</span><span class="token punctuation">(</span>myArray<span class="token punctuation">)</span>
-
-	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"==="</span><span class="token punctuation">)</span>
-	<span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> value <span class="token operator">:=</span> <span class="token keyword">range</span> myArray <span class="token punctuation">&#123;</span>
-		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
-	<span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<pre class="line-numbers language-go" data-language="go"><code class="language-go">myArray <span class="token keyword">type</span> is <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span>
-value <span class="token operator">=</span>  <span class="token number">1</span>
-value <span class="token operator">=</span>  <span class="token number">2</span>
-value <span class="token operator">=</span>  <span class="token number">3</span>
-value <span class="token operator">=</span>  <span class="token number">4</span>
-<span class="token operator">==</span><span class="token operator">=</span>
-<span class="token number">100</span>
-<span class="token number">2</span>
-<span class="token number">3</span>
-<span class="token number">4</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
+                <h1 id="GO-learning-009-slice"><a href="#GO-learning-009-slice" class="headerlink" title="GO learning - 009 slice"></a>GO learning - 009 slice</h1>
                 
             </div>
             <hr/>
@@ -674,9 +575,9 @@ value <span class="token operator">=</span>  <span class="token number">4</span>
                 <a href="/liangjunyi.github.io/2023/09/14/go-learning-008-array/">
                     <div class="card-image">
                         
-                        <img src="https://s2.loli.net/2023/09/14/fsmtjwc3a21uGN5.png" class="responsive-img" alt="GO learning - 007 defer">
+                        <img src="https://s2.loli.net/2023/09/14/fsmtjwc3a21uGN5.png" class="responsive-img" alt="GO learning - 008 array">
                         
-                        <span class="card-title">GO learning - 007 defer</span>
+                        <span class="card-title">GO learning - 008 array</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -944,7 +845,7 @@ value <span class="token operator">=</span>  <span class="token number">4</span>
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">58.3k</span>
+                        class="white-color">58k</span>
             
             
             
