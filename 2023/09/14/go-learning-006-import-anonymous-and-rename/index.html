@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="GO learning - 005 Pointer, Home - Junyi Liang">
-    <meta name="description" content="Const Iota">
+    <meta name="keywords" content="GO learning - 006 Pointer, Home - Junyi Liang">
+    <meta name="description" content="Pointer">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +19,7 @@
 
     
 
-    <title>GO learning - 005 Pointer | Home - Junyi Liang</title>
+    <title>GO learning - 006 Pointer | Home - Junyi Liang</title>
     <link rel="icon" type="image/png" href="/liangjunyi.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/liangjunyi.github.io/libs/awesome/css/all.min.css">
@@ -270,7 +270,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">GO learning - 005 Pointer</h1>
+                    <h1 class="description center-align post-title">GO learning - 006 Pointer</h1>
                 </div>
             </div>
         </div>
@@ -425,7 +425,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    4
+                    115
                 </div>
                 
 
@@ -457,6 +457,57 @@
             <div id="articleContent">
                 <h1 id="GO-learning-006-Pointer"><a href="#GO-learning-006-Pointer" class="headerlink" title="GO learning - 006 Pointer"></a>GO learning - 006 Pointer</h1><p><img src="https://s2.loli.net/2023/09/14/DRGCNZ6JjrS12Ty.png" alt="image-20230914143914977"></p>
 <p><img src="https://s2.loli.net/2023/09/14/3jFlksOIueah4y9.png" alt="image-20230914144207753"></p>
+<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">"fmt"</span>
+
+<span class="token keyword">func</span> <span class="token function">swap</span><span class="token punctuation">(</span>a <span class="token builtin">int</span><span class="token punctuation">,</span> b <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">var</span> temp <span class="token builtin">int</span>
+	temp <span class="token operator">=</span> a
+	a <span class="token operator">=</span> b
+	b <span class="token operator">=</span> temp
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">var</span> a <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">10</span>
+	<span class="token keyword">var</span> b <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">20</span>
+
+	<span class="token function">swap</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span>
+
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"a = "</span><span class="token punctuation">,</span> a<span class="token punctuation">,</span> <span class="token string">" b = "</span><span class="token punctuation">,</span> b<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-go" data-language="go"><code class="language-go">a <span class="token operator">=</span>  <span class="token number">10</span>  b <span class="token operator">=</span>  <span class="token number">20</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-go" data-language="go"><code class="language-go"><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">"fmt"</span>
+
+<span class="token comment">// func swap(a int, b int) &#123;</span>
+<span class="token comment">// 	var temp int</span>
+<span class="token comment">// 	temp = a</span>
+<span class="token comment">// 	a = b</span>
+<span class="token comment">// 	b = temp</span>
+<span class="token comment">// &#125;</span>
+
+<span class="token keyword">func</span> <span class="token function">swap</span><span class="token punctuation">(</span>pa <span class="token operator">*</span><span class="token builtin">int</span><span class="token punctuation">,</span> pb <span class="token operator">*</span><span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">var</span> temp <span class="token builtin">int</span>
+	temp <span class="token operator">=</span> <span class="token operator">*</span>pa
+	<span class="token operator">*</span>pa <span class="token operator">=</span> <span class="token operator">*</span>pb
+	<span class="token operator">*</span>pb <span class="token operator">=</span> temp
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">var</span> a <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">10</span>
+	<span class="token keyword">var</span> b <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">20</span>
+
+	<span class="token function">swap</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>a<span class="token punctuation">,</span> <span class="token operator">&amp;</span>b<span class="token punctuation">)</span>
+
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"a = "</span><span class="token punctuation">,</span> a<span class="token punctuation">,</span> <span class="token string">" b = "</span><span class="token punctuation">,</span> b<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-go" data-language="go"><code class="language-go">a <span class="token operator">=</span>  <span class="token number">20</span>  b <span class="token operator">=</span>  <span class="token number">10</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 
                 
             </div>
@@ -578,15 +629,15 @@
                 <a href="/liangjunyi.github.io/2023/09/14/go-learning-006-import-anonymous-and-rename/">
                     <div class="card-image">
                         
-                        <img src="https://s2.loli.net/2023/09/14/fsmtjwc3a21uGN5.png" class="responsive-img" alt="GO learning - 005 Pointer">
+                        <img src="https://s2.loli.net/2023/09/14/fsmtjwc3a21uGN5.png" class="responsive-img" alt="GO learning - 006 Pointer">
                         
-                        <span class="card-title">GO learning - 005 Pointer</span>
+                        <span class="card-title">GO learning - 006 Pointer</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Const Iota
+                            Pointer
                         
                     </div>
                     <div class="publish-info">
@@ -624,23 +675,23 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/liangjunyi.github.io/2023/09/13/go-learning-005-import-anonymous-and-rename/">
+                <a href="/liangjunyi.github.io/2023/09/14/go-learning-007-defer/">
                     <div class="card-image">
                         
-                        <img src="https://s2.loli.net/2023/09/14/fsmtjwc3a21uGN5.png" class="responsive-img" alt="GO learning - 005 Import anonymous and rename">
+                        <img src="https://s2.loli.net/2023/09/14/fsmtjwc3a21uGN5.png" class="responsive-img" alt="GO learning - 007 defer">
                         
-                        <span class="card-title">GO learning - 005 Import anonymous and rename</span>
+                        <span class="card-title">GO learning - 007 defer</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Const Iota
+                            defer
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-14
                             </span>
                         <span class="publish-author">
                             
@@ -849,7 +900,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">57.6k</span>
+                        class="white-color">57.7k</span>
             
             
             
