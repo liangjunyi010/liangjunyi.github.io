@@ -6,7 +6,7 @@
   <link href="https://liangjunyi010.github.io/atom.xml" rel="self"/>
   
   <link href="https://liangjunyi010.github.io/"/>
-  <updated>2024-02-28T06:42:53.015Z</updated>
+  <updated>2025-01-03T07:18:59.794Z</updated>
   <id>https://liangjunyi010.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AI Backdoor - Papers</title>
+    <link href="https://liangjunyi010.github.io/2025/01/03/ai-backdoor-papers/"/>
+    <id>https://liangjunyi010.github.io/2025/01/03/ai-backdoor-papers/</id>
+    <published>2025-01-03T09:51:00.000Z</published>
+    <updated>2025-01-03T07:18:59.794Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://p.ipic.vip/d5pmiw.png" alt="image-20250103150802221"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://p.ipic.vip/d5pmiw.png&quot; alt=&quot;image-20250103150802221&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="AI" scheme="https://liangjunyi010.github.io/categories/AI/"/>
+    
+    
+    <category term="AI" scheme="https://liangjunyi010.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -468,30 +493,6 @@
     <category term="Python" scheme="https://liangjunyi010.github.io/tags/Python/"/>
     
     <category term="Environment" scheme="https://liangjunyi010.github.io/tags/Environment/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学习AWS</title>
-    <link href="https://liangjunyi010.github.io/2023/01/27/database-learning-aws/"/>
-    <id>https://liangjunyi010.github.io/2023/01/27/database-learning-aws/</id>
-    <published>2023-01-27T12:49:00.000Z</published>
-    <updated>2023-03-27T17:27:30.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="学习AWS"><a href="#学习AWS" class="headerlink" title="学习AWS"></a>学习AWS</h1><h2 id="1-开始"><a href="#1-开始" class="headerlink" title="1.开始"></a>1.开始</h2><p>选择Modules，进入Leaner Lab</p><p><img src="https://s2.loli.net/2023/01/27/i7ODCwxNAjXmzrl.png" alt="image-20230127161002154"></p><p>进入的这个界面只是console,不是我们的cloud instance</p><p><img src="https://s2.loli.net/2023/01/27/Glcjn351bDfMWOJ.png" alt="image-20230127161149333"></p><p>点击start lab按钮，等待一段时间</p><p><img src="https://s2.loli.net/2023/01/27/IATSnij6seX3cGt.png" alt="image-20230127161231387"></p><p>当lab启动完毕后，我们看到AWS变绿，点击进入AWS management console</p><p><img src="https://s2.loli.net/2023/01/27/LVJOR6vqlZTBYwW.png" alt="image-20230127161303781"></p><p>进入之后查看自己右上角ID是否正确</p><p><img src="https://s2.loli.net/2023/01/27/M4jO6SGnpQmIoL9.png" alt="image-20230127161411052"></p><p>进入service，对于这节课，我们选择EC2（如果Recently Visit下面没有这个选项，去All services下面寻找）</p><p><img src="https://s2.loli.net/2023/01/27/ogxKAsTh8zGm7tV.png" alt="image-20230127161452023"></p><blockquote><p>EC2允许我们在cloud上run一个particular server</p></blockquote><p>第一步，我们想跑一个instance</p><p><img src="https://s2.loli.net/2023/01/27/kyucCHsVFYRMdN6.png" alt="image-20230127162055981"></p><p>进入这个界面后，选择ubuntu作为server</p><p><img src="https://s2.loli.net/2023/01/27/eI4Q7oiwTtgc8Ff.png" alt="image-20230127162157856"></p><p>然后给机器起个名字</p><p><img src="https://s2.loli.net/2023/01/27/Wp9osOjmvkwDxTe.png" alt="image-20230127165414048"></p><p>随后创建一个新的key pair</p><p><img src="https://s2.loli.net/2023/01/27/wZe6vN813Y4SXry.png" alt="image-20230127165512229"></p><p><img src="https://s2.loli.net/2023/01/27/oN6AT5x9QS21jCq.png" alt="image-20230127165536080"></p><blockquote><p>产生的key pair要好好保留，Amazon不会保留，如果丢失，则该虚拟机的所有data都会丢失</p></blockquote><p>剩下的东西暂时留default值，接下来Launch instance</p><p><img src="https://s2.loli.net/2023/01/27/1Vf7xTLQPvoXFke.png" alt="image-20230127194150072"></p><p>等待运行</p><p><img src="https://s2.loli.net/2023/01/27/ZSVun4HLWovlAf2.png" alt="image-20230127194401750"></p><p>运行结束显示的页面</p><p><img src="https://s2.loli.net/2023/01/27/Kz5kOEIFiyp4Smn.png" alt="image-20230127194422844"></p><p>点击蓝色链接，进入新的页面，能看到我们目前有哪些instance</p><p><img src="https://s2.loli.net/2023/01/27/DuWYe1jJNZGCL5x.png" alt="image-20230127194514892"></p><h3 id="如何从首页再回到上个界面"><a href="#如何从首页再回到上个界面" class="headerlink" title="如何从首页再回到上个界面"></a>如何从首页再回到上个界面</h3><p>选择EC2</p><p><img src="https://s2.loli.net/2023/01/27/V8CeEr7jNBDQwAd.png" alt="image-20230127201554458"></p><p>再选择左侧instances，就到了目标界面</p><p><img src="https://s2.loli.net/2023/01/27/gfKdbilY9aqct8O.png" alt="image-20230127203218307"></p><h3 id="修改pem文件"><a href="#修改pem文件" class="headerlink" title="修改pem文件"></a>修改pem文件</h3><p>我将文件存在home/ssh下</p><p>修改pem文件的性质，400意为只读性质</p><p><img src="https://s2.loli.net/2023/01/27/bevJCT8p5dfVBc3.png" alt="image-20230127204034860"></p><p>在本地链接刚刚创建的远程server</p><p><img src="https://s2.loli.net/2023/01/27/x5udpA91Rw4EbQo.png" alt="image-20230127204322268"></p><p>成功链接</p><p><img src="https://s2.loli.net/2023/01/27/wYN8bTrJSP6UfCp.png" alt="image-20230127204604513"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;学习AWS&quot;&gt;&lt;a href=&quot;#学习AWS&quot; class=&quot;headerlink&quot; title=&quot;学习AWS&quot;&gt;&lt;/a&gt;学习AWS&lt;/h1&gt;&lt;h2 id=&quot;1-开始&quot;&gt;&lt;a href=&quot;#1-开始&quot; class=&quot;headerlink&quot; title=&quot;1.开始&quot;</summary>
-      
-    
-    
-    
-    <category term="Database" scheme="https://liangjunyi010.github.io/categories/Database/"/>
-    
-    
-    <category term="AWS" scheme="https://liangjunyi010.github.io/tags/AWS/"/>
     
   </entry>
   
