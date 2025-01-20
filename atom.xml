@@ -6,7 +6,7 @@
   <link href="https://liangjunyi010.github.io/atom.xml" rel="self"/>
   
   <link href="https://liangjunyi010.github.io/"/>
-  <updated>2025-01-03T07:18:59.794Z</updated>
+  <updated>2025-01-10T03:15:17.502Z</updated>
   <id>https://liangjunyi010.github.io/</id>
   
   <author>
@@ -17,18 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="https://liangjunyi010.github.io/2025/01/10/untitled-1/"/>
+    <id>https://liangjunyi010.github.io/2025/01/10/untitled-1/</id>
+    <published>2025-01-10T03:15:17.502Z</published>
+    <updated>2025-01-10T03:15:17.502Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>AI Backdoor - Papers</title>
     <link href="https://liangjunyi010.github.io/2025/01/03/ai-backdoor-papers/"/>
     <id>https://liangjunyi010.github.io/2025/01/03/ai-backdoor-papers/</id>
     <published>2025-01-03T09:51:00.000Z</published>
-    <updated>2025-01-03T07:18:59.794Z</updated>
+    <updated>2025-01-03T08:24:49.422Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://p.ipic.vip/d5pmiw.png" alt="image-20250103150802221"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="AI-Backdoor-Papers"><a href="#AI-Backdoor-Papers" class="headerlink" title="AI Backdoor - Papers"></a>AI Backdoor - Papers</h1><ol><li><strong>An LLM-Assisted Easy-to-Trigger Backdoor Attack on Code Completion Models: Injecting Disguised Vulnerabilities against Strong Detection</strong><ul><li><strong>Comments:</strong> To appear in USENIX Security ‘24</li><li>introduce CodeBreaker, a pioneering LLM-assisted backdoor attack framework</li><li>code completion task</li><li><a href="https://arxiv.org/abs/2406.06822">https://arxiv.org/abs/2406.06822</a></li><li><em>[Submitted on 10 Jun 2024]</em></li></ul></li><li><strong>BadAgent: Inserting and Activating Backdoor Attacks in LLM Agents</strong><ul><li><strong>Comments</strong>: Accepted by ACL 2024</li><li>propose BadAgent, a robust backdoor attack method for LLM-based intelligent agents</li><li>LLM agent tasks</li><li><a href="https://doi.org/10.48550/arXiv.2406.03007">https://doi.org/10.48550/arXiv.2406.03007</a></li><li><em>[Submitted on 5 Jun 2024]</em></li></ul></li><li><strong>RTL-Breaker: Assessing the Security of LLMs against Backdoor Attacks on HDL Code Generation</strong><ul><li><strong>Comments</strong>: Accepted at 2025 Design, Automation &amp; Test in Europe (DATE) Conference</li><li>propose RTL-Breaker, a novel backdoor attack framework for LLM-based HDL code generation</li><li>HDL code generation and security risks in hardware systems</li><li><a href="https://doi.org/10.48550/arXiv.2411.17569">https://doi.org/10.48550/arXiv.2411.17569</a></li><li><em>[Submitted on 11 Nov 2024]</em></li></ul></li><li><strong>BackdoorLLM: A Comprehensive Benchmark for Backdoor Attacks on Large Language Models</strong><ul><li>Introduces BackdoorLLM, the first comprehensive benchmark for studying backdoor attacks on LLMs</li><li>propose BackdoorLLM, a benchmark for evaluating diverse backdoor attacks in LLMs</li><li>backdoor attacks in LLM text generation tasks</li><li><a href="https://doi.org/10.48550/arXiv.2408.12798">https://doi.org/10.48550/arXiv.2408.12798</a></li><li><em>[Submitted on 27 Aug 2024]</em></li></ul></li></ol>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://p.ipic.vip/d5pmiw.png&quot; alt=&quot;image-20250103150802221&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;h1 id=&quot;AI-Backdoor-Papers&quot;&gt;&lt;a href=&quot;#AI-Backdoor-Papers&quot; class=&quot;headerlink&quot; title=&quot;AI Backdoor - Papers&quot;&gt;&lt;/a&gt;AI Backdoor - Papers&lt;/h1&gt;&lt;ol&gt;
 </summary>
       
     
@@ -466,33 +479,6 @@
     
     
     <category term="Network" scheme="https://liangjunyi010.github.io/tags/Network/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>创建虚拟环境</title>
-    <link href="https://liangjunyi010.github.io/2023/02/01/python-create-virtual-env/"/>
-    <id>https://liangjunyi010.github.io/2023/02/01/python-create-virtual-env/</id>
-    <published>2023-02-01T09:51:00.000Z</published>
-    <updated>2024-01-18T07:18:12.382Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h1><p>首先，根据使用的 python 版本，下载 venv 包</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install python3-venv</span><br></pre></td></tr></tbody></table></figure><p>创建虚拟环境</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 -m venv my-project-env</span><br></pre></td></tr></tbody></table></figure><p>在这个虚拟环境的目录下，有一个bin目录，下面有activate脚本</p><p>使用source命令来运行这个脚本，激活虚拟环境</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source my-project-env/<span class="built_in">bin</span>/activate</span><br></pre></td></tr></tbody></table></figure><p>激活虚拟环境后，使用pip安装我们需要的包</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install requests</span><br></pre></td></tr></tbody></table></figure><p>检验包是否安装完成</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -c <span class="string">"import requests"</span></span><br></pre></td></tr></tbody></table></figure><p>使用你喜欢的<a href="https://www.myfreax.com/how-to-install-visual-studio-code-on-ubuntu-20-04/">文本编辑器</a>，在本教程中，我们将使用vscode创建文件<code>testing.py</code>：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code testing.py</span><br></pre></td></tr></tbody></table></figure><p>将以下内容粘贴到文件中：</p><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">r = requests.get(<span class="string">'http://httpbin.org/get'</span>)  </span><br><span class="line"><span class="built_in">print</span>(r.headers)  </span><br></pre></td></tr></tbody></table></figure><p>关闭并保存文件。现在可以运行命令<code>python testing.py</code>运行脚本。脚本将打印所有标题条目的字典。</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python testing.py</span><br></pre></td></tr></tbody></table></figure><p>完成工作后停用虚拟环境，只需键入<code>deactivate</code>，您将返回到常规shell。</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deactivate</span><br></pre></td></tr></tbody></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;创建虚拟环境&quot;&gt;&lt;a href=&quot;#创建虚拟环境&quot; class=&quot;headerlink&quot; title=&quot;创建虚拟环境&quot;&gt;&lt;/a&gt;创建虚拟环境&lt;/h1&gt;&lt;p&gt;首先，根据使用的 python 版本，下载 venv 包&lt;/p&gt;
-&lt;figure class=&quot;highli</summary>
-      
-    
-    
-    
-    <category term="Python" scheme="https://liangjunyi010.github.io/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://liangjunyi010.github.io/tags/Python/"/>
-    
-    <category term="Environment" scheme="https://liangjunyi010.github.io/tags/Environment/"/>
     
   </entry>
   
